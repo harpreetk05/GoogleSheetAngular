@@ -1,3 +1,9 @@
-<p>qsheet works!</p>
-
-<div *ngFor="let main of productData">{{main.name}}</div>
+<!-- <h1>Child Component</h1>
+{{parentData}} -->
+<div style="width: 50%; margin-left: 20%;">
+  <h1 style="text-align: center;">Google Sheet</h1>
+  <div *ngFor="let main of productDataFilter.table.rows">{{main.c|json}}
+    <!-- <div *ngFor="let data of main">{{data.c|json}}
+      </div> -->
+  </div>
+  </div>

@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'googelsheet';
+  enterName = "Harpreet";
+  parentData = "";
+
+  TransferData() {
+  this.parentData = this.enterName;
+  }
 }
